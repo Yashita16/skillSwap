@@ -15,7 +15,8 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         setUser(true);
-        navigate('/')
+        if(state==="login") navigate('/');
+        else navigate('/skills')
 
     }
 
@@ -46,13 +47,13 @@ const Login = () => {
 
 
 
-
+   
 
                 
                 <div className="mt-4 text-left text-indigo-500">
                     <button className="text-sm text-secondary" type="reset">Forget password?</button>
                 </div>
-                <button type="submit" className="mt-2 w-full h-11 rounded-full text-white bg-indigo-500 hover:opacity-90 transition-opacity bg-secondary cursor-pointer">
+                <button  type="submit" className="mt-2 w-full h-11 rounded-full text-white bg-indigo-500 hover:opacity-90 transition-opacity bg-secondary cursor-pointer">
                     {state === "login" ? "Login" : "Sign up"}
                 </button>
                 <p onClick={() => setState(prev => prev === "login" ? "register" : "login")} className="text-gray-500 text-sm mt-3 mb-11">{state === "login" ? "Don't have an account?" : "Already have an account?"} 
