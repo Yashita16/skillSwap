@@ -46,7 +46,7 @@ const FeaturedSkills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="group flex flex-col items-center text-center bg-white rounded-2xl p-6 hover:bg-gray hover:shadow-xl transition duration-300 cursor-pointer" onClick={()=>{navigate(`\explore\skill==${skill.title}`)}}
+            className="group flex flex-col items-center text-center bg-white rounded-2xl p-6 hover:bg-gray hover:shadow-xl transition duration-300 cursor-pointer" onClick={() => navigate(`/explore?skill=${skill.title}`)}
           >
             
             {/* Icon */}

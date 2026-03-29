@@ -26,7 +26,7 @@ const steps = [
 
 const HowWorks = () => {
   return (
-    <div className="w-full py-20 px-4 bg-gradient-to-b from-white to-gray-50">
+    <div className="w-full py-20 px-4 bg-gray-50">
       
       {/* Heading */}
       <h2 className="text-3xl font-bold text-center mb-16">

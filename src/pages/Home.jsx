@@ -3,6 +3,9 @@ import Navbar from '../components/Navbar'
 import IntroSection from '../components/IntroSection'
 import HowWorks from '../components/HowWorks'
 import FeaturedSkills from '../components/FeaturedSkills'
+import SuggestedUser from '../components/SuggestedUser'
+import ExplorePeople from '../components/Explorepeople'
+import Contact from '../components/Contact'
 
 const Home = () => {
   return (
@@ -11,6 +14,9 @@ const Home = () => {
       <IntroSection />
       <HowWorks />
       <FeaturedSkills />
+      <ExplorePeople />
+      <Contact />
+      
 
       
       
