@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import assets from '../assets/assets'
+import { assets } from '../assets/assets'
 
 const IntroSection = () => {
   const navigate = useNavigate()
@@ -8,7 +8,7 @@ const IntroSection = () => {
   return (
     <div className="relative w-full">
 
-    
+
       <img
         src={assets.intro_background}
         alt="background intro"

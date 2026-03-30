@@ -1,6 +1,6 @@
 import React from "react";
 import SuggestedUser from "./SuggestedUser";
-import assets , {people} from "../assets/assets";
+import {assets,people} from "../assets/assets";
 
 const ExplorePeople = () => {
   
