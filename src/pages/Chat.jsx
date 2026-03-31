@@ -70,7 +70,7 @@ const Chat = ({ users, currentUserId }) => {
     const appID = 55243146;
 
     // ⚠️ TEMP TEST ONLY (backend ke bina)
-    const serverSecret = "2dfe08d7cfecf3c055b871ac9e92c8c4";
+    const serverSecret = import.meta.env.VITE_SERVER_SECRET;
 
     const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
       appID,
