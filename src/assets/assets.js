@@ -47,9 +47,55 @@ export const people = [
     } 
 ];
 
+export const usersId = [
+  { id: "u1", name: "Aman" },
+  { id: "u2", name: "Riya" },
+  { id: "u3", name: "Karan" },
+  { id: "u4", name: "Sneha" },
+  { id: "u5", name: "Rahul" },
+  { id: "u6", name: "Priya" },
+  { id: "u7", name: "Arjun" },
+  { id: "u8", name: "Neha" },
+  { id: "u9", name: "Vikas" },
+  { id: "u10", name: "Anjali" },
+  { id: "u11", name: "Rohit" },
+  { id: "u12", name: "Pooja" },
+  { id: "u13", name: "Aditya" },
+  { id: "u14", name: "Simran" },
+  { id: "u15", name: "Manish" },
+  { id: "u16", name: "Kavya" },
+  { id: "u17", name: "Sahil" },
+  { id: "u18", name: "Meera" },
+  { id: "u19", name: "Varun" },
+  { id: "u20", name: "Isha" },
+];
+
+export const connections = {
+  u1: ["u3", "u5", "u7", "u10"],
+  u2: ["u4", "u6", "u8"],
+  u3: ["u1", "u9", "u11"],
+  u4: ["u2", "u5", "u12"],
+  u5: ["u1", "u4", "u6", "u13"],
+  u6: ["u2", "u5", "u7"],
+  u7: ["u1", "u6", "u8", "u14"],
+  u8: ["u2", "u7", "u9"],
+  u9: ["u3", "u8", "u10"],
+  u10: ["u1", "u9", "u11", "u15"],
+  u11: ["u3", "u10", "u12"],
+  u12: ["u4", "u11", "u13"],
+  u13: ["u5", "u12", "u14", "u16"],
+  u14: ["u7", "u13", "u15"],
+  u15: ["u10", "u14", "u16"],
+  u16: ["u13", "u15", "u17"],
+  u17: ["u16", "u18", "u19"],
+  u18: ["u17", "u20"],
+  u19: ["u17", "u20"],
+  u20: ["u18", "u19"]
+};
 
 export const users = [
   {
+    id: "u1",
     name: "Riya Sharma",
     bio: "UI/UX Designer passionate about creating beautiful user experiences.",
     location: "Delhi, India",
@@ -62,6 +108,7 @@ export const users = [
     image: assets.dummy_picture_1,
   },
   {
+    id: "u2",
     name: "Aditya Verma",
     bio: "Backend developer who loves solving real-world problems.",
     location: "Mumbai, India",
@@ -74,6 +121,7 @@ export const users = [
     image: assets.dummy_picture_2,
   },
   {
+    id: "u3",
     name: "Sneha Kapoor",
     bio: "English tutor helping students improve communication.",
     location: "Chandigarh, India",
@@ -86,6 +134,7 @@ export const users = [
     image: assets.dummy_picture_3,
   },
   {
+    id: "u4",
     name: "Rahul Mehta",
     bio: "Passionate about DSA and competitive programming.",
     location: "Pune, India",
@@ -98,6 +147,7 @@ export const users = [
     image: assets.dummy_picture_1,
   },
   {
+    id: "u5",
     name: "Anjali Singh",
     bio: "Creative graphic designer and branding expert.",
     location: "Jaipur, India",
@@ -110,6 +160,7 @@ export const users = [
     image: assets.dummy_picture_2,
   },
   {
+    id: "u6",
     name: "Karan Patel",
     bio: "Full-stack developer building scalable apps.",
     location: "Ahmedabad, India",
@@ -122,6 +173,7 @@ export const users = [
     image: assets.dummy_picture_3,
   },
   {
+    id: "u7",
     name: "Neha Gupta",
     bio: "Content writer and storytelling enthusiast.",
     location: "Lucknow, India",
@@ -134,6 +186,7 @@ export const users = [
     image: assets.dummy_picture_1,
   },
   {
+    id: "u8",
     name: "Aman Yadav",
     bio: "Python developer exploring AI and ML.",
     location: "Noida, India",
@@ -146,6 +199,7 @@ export const users = [
     image: assets.dummy_picture_2,
   },
   {
+    id: "u9",
     name: "Pooja Sharma",
     bio: "Dance instructor and fitness enthusiast.",
     location: "Delhi, India",
@@ -158,6 +212,7 @@ export const users = [
     image: assets.dummy_picture_3,
   },
   {
+    id: "u10",
     name: "Rohit Singh",
     bio: "Java developer focusing on backend systems.",
     location: "Bangalore, India",
@@ -170,6 +225,7 @@ export const users = [
     image: assets.dummy_picture_1,
   },
   {
+    id: "u11",
     name: "Simran Kaur",
     bio: "Singer and music coach.",
     location: "Amritsar, India",
@@ -182,6 +238,7 @@ export const users = [
     image: assets.dummy_picture_2,
   },
   {
+    id: "u12",
     name: "Vikas Sharma",
     bio: "DevOps engineer automating deployments.",
     location: "Hyderabad, India",
@@ -194,6 +251,7 @@ export const users = [
     image: assets.dummy_picture_3,
   },
   {
+    id: "u13",
     name: "Meera Nair",
     bio: "Yoga trainer promoting healthy lifestyle.",
     location: "Kochi, India",
@@ -206,6 +264,7 @@ export const users = [
     image: assets.dummy_picture_1,
   },
   {
+    id: "u14",
     name: "Arjun Reddy",
     bio: "Mobile app developer (Flutter).",
     location: "Chennai, India",
@@ -218,6 +277,7 @@ export const users = [
     image: assets.dummy_picture_2,
   },
   {
+    id: "u15",
     name: "Nikita Jain",
     bio: "Marketing strategist and branding expert.",
     location: "Indore, India",
@@ -230,6 +290,7 @@ export const users = [
     image: assets.dummy_picture_3,
   },
   {
+    id: "u16",
     name: "Deepak Kumar",
     bio: "SQL and database optimization expert.",
     location: "Patna, India",
@@ -242,6 +303,7 @@ export const users = [
     image: assets.dummy_picture_1,
   },
   {
+    id: "u17",
     name: "Priya Das",
     bio: "Sketch artist and illustrator.",
     location: "Kolkata, India",
@@ -254,6 +316,7 @@ export const users = [
     image: assets.dummy_picture_2,
   },
   {
+    id: "u18",
     name: "Saurabh Mishra",
     bio: "DSA mentor and problem-solving coach.",
     location: "Varanasi, India",
@@ -266,6 +329,7 @@ export const users = [
     image: assets.dummy_picture_3,
   },
   {
+    id: "u19",
     name: "Tanvi Agarwal",
     bio: "Fashion designer and stylist.",
     location: "Delhi, India",
@@ -278,6 +342,7 @@ export const users = [
     image: assets.dummy_picture_1,
   },
   {
+    id: "u20",
     name: "Harsh Vardhan",
     bio: "Cybersecurity enthusiast and ethical hacker.",
     location: "Bhopal, India",
@@ -290,7 +355,6 @@ export const users = [
     image: assets.dummy_picture_2,
   },
 ];
-
 
 
 
